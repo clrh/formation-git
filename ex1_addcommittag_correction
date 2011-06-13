@@ -1,12 +1,11 @@
 
-Travail en local
 
 @ 1/ Installer git
 > sudo aptitude install git-core
 
 @ 2/ Configurer git avec votre "Prénom Nom" et votre mail
 > git config --global user.name "Prénom Nom"
-> git config --global user.mail "prenom.nom@chezvous.com"
+> git config --global user.mail "prenom.nom@ATchezvous.com"
 
 @ 3/ Initialiser un nouveau dépot local (dans un dossier "git-sandbox")
 > cd

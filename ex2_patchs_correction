@@ -1,3 +1,5 @@
+Apprendre à faire des patchs, les envoyers, les signer etc.
+
 @1/ Voir le diff du dernier commit puis des 2 derniers
 > git diff master^
 > git diff master~2
@@ -7,11 +9,13 @@
 > git format-patch -o patches a3a74456d7f46a375816c0845ba550623a34d72a
 
 @3/ Appliquer ce patch
-> git am 0001-Second-simple-commit.patch
+> git am -iu3 0001-Second-simple-commit.patch
 
+@4/ Signer le patch
+> git format-patch -s 0001-Second-simple-commit.patch
 
-TODO
-- git apply
-- git format-patch
-- git send-email
+@5/ L'envoyer à une liste (ensemble)
+> git send-email --annotate 0001-Second-simple-commit.patch
 
+@6/ Appliquer un autre patch en explorant la commande cherry-pick
+> git cherry-pick <idcommit>

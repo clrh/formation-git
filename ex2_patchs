@@ -1,3 +1,6 @@
 @1/ Voir le diff du dernier commit puis des 2 derniers
 @2/ Créer un patch du dernier commit puis du premier commit fait au début de cet exercice que vous mettrez dans un dossier "patches"
 @3/ Appliquer ce patch
+@4/ Signer le patch
+@5/ L'envoyer à une liste (ensemble)
+@6/ Appliquer un autre patch en explorant la commande cherry-pick

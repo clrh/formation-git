@@ -1,21 +1,33 @@
+Interragir et gérer les dépôts distants
+
 @1/ Créer un compte sur github ou gitorious
 
 @2/ Envoyer votre dépôt local sur votre dépôt distant
 
 @3/ Ajouter le dépôt distant de quelqu'un d'autre sur votre machine et le mettre à jour
+> git remote add bob git://githib.com/.../....git 
+> git fetch bob
 
+@Plan B
+@1/ Créer un dépôt "distant" sur votre machine à partir de votre dépot local
+> cd ..
+> $ git clone --bare git-sandbox git-sandbox.git
+> cd git-sandbox
+> git remote add origin ~/formation/unilim/git-sandbox.git
 
-TODO
-Travail avec plusieurs dépôts
-    - git clone
-            protocoles supportés :
-                - git
-                - http
-                - ssh
-                - file
-    - git remote add
-    - git fetch
-    - git pull
-    - git push (dans le cas de ssh et de file)
-    - git remote show
-    - git branch -r
+@2/ Créer un nouveau dépot local à partir du "repo distant"
+> git clone ~/.../git-sandbox.git gsclone
+
+@3/ Créer et pusher un nouveau commit sur la branche master dans gsclone
+
+@4/ Mettre à jour git-sandbox sur la branche master et observer le message de status
+
+@Suite
+@5/ Lister les remotes
+> git remote show
+
+@6/ Lister les branches distantes
+> git branch -r
+
+@7/ Lister toutes les branches
+> git branch -a

@@ -1,3 +1,5 @@
+Créer des branches et les manipuler
+
 @1/ Lister les branches locales
 > git branch
 
@@ -29,6 +31,22 @@ Voir: option -a et -v
 > git checkout master
 > git merge wip
 
-TODO
-- git rebase (option -i)
-- git stash
+@9/ Gestion de conflit: sur la branche wip, modifier un file2, le commiter, sur la branche master, modifier file2, le commiter, sur master faire un cherry-pick du commit de wip
+> git checkout wip
+> vim file2 / git add / git commit / git log -1
+> git checkout master
+> vim file2 / git add / git commit
+> git cherry-pick <idcommit>
+
+@10/ explorons ensemble la comande git rebase -i
+Travailler sur les 3 derniers commits
+> git rebase -i HEAD~3
+Option reword
+Option edit
+Option squash
+etc.
+
+@11/ Commencer une nouvelle modification sur le fichier "file", l'interrompre en mettant de côté les changements
+> git stash save "test"
+> git stash list
+> git stash pop

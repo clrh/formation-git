@@ -1,3 +1,12 @@
 @1/ Créer un compte sur github ou gitorious
 @2/ Envoyer votre dépôt local sur votre dépôt distant
 @3/ Ajouter le dépôt distant de quelqu'un d'autre sur votre machine et le mettre à jour
+@Plan B
+@1/ Créer un dépôt "distant" sur votre machine à partir de votre dépot local
+@2/ Créer un nouveau dépot local à partir du "repo distant"
+@3/ Créer et pusher un nouveau commit sur la branche master dans gsclone
+@4/ Mettre à jour git-sandbox sur la branche master et observer le message de status
+@Suite
+@5/ Lister les remotes
+@6/ Lister les branches distantes
+@7/ Lister toutes les branches

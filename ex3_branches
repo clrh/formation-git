@@ -6,3 +6,6 @@
 @6/ Créer une branche "wip" à partir de master pour développer une idée puis créer un ou plusieurs commits
 @7/ Faire évoluer master de 1 commit
 @8/ On souhaite livrer wip sur master, faire un merge
+@9/ Gestion de conflit: sur la branche wip, modifier un file2, le commiter, sur la branche master, modifier file2, le commiter, sur master faire un cherry-pick du commit de wip
+@10/ explorons ensemble la comande git rebase -i
+@11/ Commencer une nouvelle modification sur le fichier "file", l'interrompre en mettant de côté les changements
