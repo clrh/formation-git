@@ -1,0 +1,29 @@
+Opérations particulières sur des fichiers 
+    - git mv
+    - git rm
+
+Opérations particulières sur un commit
+    - git revert
+
+Précautions à prendre
+    - git push ou git pull ?
+        De la bonne et saine utilisation du push
+    - git merge ou git rebase ?
+
+Détection résolution de régression
+    - git bisect
+
+
+Hooks
+
+Commmandes comparables à un fs management
+ git gc
+ git fsck
+
+More :
+git filter-branch
+
+.git/config
+.gitignore
+
+Alias

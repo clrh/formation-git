@@ -1,0 +1,28 @@
+@ 1/ Installer git
+@ 2/ Configurer git avec votre "Prénom Nom" et votre mail
+> git config --global user.mail "prenom.nom@chezvous.com"
+@ 3/ Initialiser un nouveau dépot local (dans un dossier "git-sandbox")
+@ 4/ Créer un fichier avec 2 lignes de contenu (fichier "file")
+@ contenu du fichier:
+@ first line
+@ second line
+@ 5/ Regarder l'état du répertoire de travail
+@ 6/ Ajouter ce fichier dans l'index
+@ 7/ Regarder l'état du répertoire de travail
+@ 8/ Commiter le fichier avec un message de commit "Initial Commit"
+@ 9/ Lister les commits actuels
+@ 10/ Modifier le fichier initial ("file")
+@ contenu du fichier:
+@ first line
+@ second line
+@ third line
+@ 11/ Regarder les changements effectués
+@ 12/ Ajouter ce fichier à l'index et le commiter avec plus d'une ligne de message de commit
+@ 13/ Lister les commits enregistrés
+@ 14/ Modifier le message du dernier commit
+@ 15/ Poser un tag "110614_tag_simplework"
+@ contenu du message de tag:
+@ - first file added and commited
+@ - file has changed and benn commited
+@ 15/ Lister le contenu du tag
+@ 16/ Installer tig et visualiser le dépôt

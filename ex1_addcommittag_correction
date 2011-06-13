@@ -1,0 +1,71 @@
+
+Travail en local
+
+@ 1/ Installer git
+> sudo aptitude install git-core
+
+@ 2/ Configurer git avec votre "Prénom Nom" et votre mail
+> git config --global user.name "Prénom Nom"
+> git config --global user.mail "prenom.nom@chezvous.com"
+
+@ 3/ Initialiser un nouveau dépot local (dans un dossier "git-sandbox")
+> cd
+> mkdir formation
+> cd formation
+> mkdir git-sandbox
+> cd git-sandbox
+> git init
+
+@ 4/ Créer un fichier avec 2 lignes de contenu (fichier "file")
+@ contenu du fichier:
+@ first line
+@ second line
+> vim file
+
+@ 5/ Regarder l'état du répertoire de travail
+> git status
+
+@ 6/ Ajouter ce fichier dans l'index
+> git add file
+
+@ 7/ Regarder l'état du répertoire de travail
+> git status
+
+@ 8/ Commiter le fichier avec un message de commit "Initial Commit"
+> git commit -m "Initial Commit"
+
+@ 9/ Lister les commits actuels
+> git log
+
+@ 10/ Modifier le fichier initial ("file")
+@ contenu du fichier:
+@ first line
+@ second line
+@ third line
+> vim file
+
+@ 11/ Regarder les changements effectués
+> git diff
+
+@ 12/ Ajouter ce fichier à l'index et le commiter avec plus d'une ligne de message de commit
+> git add file
+> git commit
+
+@ 13/ Lister les commits enregistrés
+> git log
+
+@ 14/ Modifier le message du dernier commit
+> git commit --amend
+
+@ 15/ Poser un tag "110614_tag_simplework"
+@ contenu du message de tag:
+@ - first file added and commited
+@ - file has changed and benn commited
+> git tag -a 110614_tag_simpleword
+
+@ 15/ Lister le contenu du tag
+> git cat-tag tag 110614_tag_simpleword
+
+@ 16/ Installer tig et visualiser le dépôt
+> sudo aptitude install tig
+> tig

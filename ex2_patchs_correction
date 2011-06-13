@@ -1,0 +1,17 @@
+@1/ Voir le diff du dernier commit puis des 2 derniers
+> git diff master^
+> git diff master~2
+
+@2/ Créer un patch du dernier commit puis du premier commit fait au début de cet exercice que vous mettrez dans un dossier "patches"
+> git format-patch a3a74456d7f46a375816c0845ba550623a34d72a..70cd9c79bdacc05a14d8811e88e1fea9a0ea0e4
+> git format-patch -o patches a3a74456d7f46a375816c0845ba550623a34d72a
+
+@3/ Appliquer ce patch
+> git am 0001-Second-simple-commit.patch
+
+
+TODO
+- git apply
+- git format-patch
+- git send-email
+

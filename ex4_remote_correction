@@ -1,0 +1,21 @@
+@1/ Créer un compte sur github ou gitorious
+
+@2/ Envoyer votre dépôt local sur votre dépôt distant
+
+@3/ Ajouter le dépôt distant de quelqu'un d'autre sur votre machine et le mettre à jour
+
+
+TODO
+Travail avec plusieurs dépôts
+    - git clone
+            protocoles supportés :
+                - git
+                - http
+                - ssh
+                - file
+    - git remote add
+    - git fetch
+    - git pull
+    - git push (dans le cas de ssh et de file)
+    - git remote show
+    - git branch -r

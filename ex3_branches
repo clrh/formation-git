@@ -1,0 +1,8 @@
+@1/ Lister les branches locales
+@2/ Créer une branche "test" à partir de la branche master
+@3/ Se positionner sur la branche "test"
+@4/ Lister l'état de toutes les branches
+@5/ Créer un nouveau commit dans la branche "test" puis comparer la branche test avec la branche master
+@6/ Créer une branche "wip" à partir de master pour développer une idée puis créer un ou plusieurs commits
+@7/ Faire évoluer master de 1 commit
+@8/ On souhaite livrer wip sur master, faire un merge
