@@ -1,6 +1,5 @@
 @ 1/ Installer git
 @ 2/ Configurer git avec votre "Prénom Nom" et votre mail
-> git config --global user.mail "prenom.nom@ATchezvous.com"
 @ 3/ Initialiser un nouveau dépot local (dans un dossier "git-sandbox")
 @ 4/ Créer un fichier avec 2 lignes de contenu (fichier "file")
 @ contenu du fichier:

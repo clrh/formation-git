@@ -5,7 +5,7 @@
 
 @ 2/ Configurer git avec votre "Prénom Nom" et votre mail
 > git config --global user.name "Prénom Nom"
-> git config --global user.mail "prenom.nom@ATchezvous.com"
+> git config --global user.mail "prenom.nomATchezvous.com"
 
 @ 3/ Initialiser un nouveau dépot local (dans un dossier "git-sandbox")
 > cd
