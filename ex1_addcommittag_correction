@@ -1,19 +1,29 @@
-
-
 @ 1/ Installer git
+> git --version
 > sudo aptitude install git-core
 
-@ 2/ Configurer git avec votre "Prénom Nom" et votre mail
-> git config --global user.name "Prénom Nom"
-> git config --global user.mail "prenom.nomATchezvous.com"
+@ prompt ~ $ mkdir tp-git
+@ prompt ~ $ cd tp-git
+@ prompt ~/tp-git $ git clone git://github.com/clrh/formation-git.git
+@ prompt ~/tp-git $ vim formation-git/ex1_addcommittag
+@ prompt ~ $ vim ~/.gitconfig
+[color]
+    diff = auto
+    interactive = auto
+    status = auto
+    branch = auto
 
-@ 3/ Initialiser un nouveau dépot local (dans un dossier "git-sandbox")
-> cd
-> mkdir formation
-> cd formation
+
+@ 2/ Initialiser un nouveau dépot local (dans un dossier "git-sandbox")
 > mkdir git-sandbox
 > cd git-sandbox
 > git init
+> ls -al
+
+@ 3/ Configurer git avec votre "Prénom Nom" et votre mail
+> --global pour configurer toutes les utilisation de git (~/.gitconfig), retirer --global pour ne configurer que le dépôt courant (~/.git/config)
+> git config --global user.name "Prénom Nom"
+> git config --global user.mail "prenom.nomATchezvous.com"
 
 @ 4/ Créer un fichier avec 2 lignes de contenu (fichier "file")
 @ contenu du fichier:
@@ -56,15 +66,23 @@
 @ 14/ Modifier le message du dernier commit
 > git commit --amend
 
-@ 15/ Poser un tag "110614_tag_simplework"
+15/ Tester les options --oneline -n et --decorate de la comande git log
+> git log
+> git log --oneline
+> git log --oneline -1
+> git log --oneline --decorate
+
+@ 16/ Poser un tag "yymmdd_simplework"
 @ contenu du message de tag:
 @ - first file added and commited
 @ - file has changed and benn commited
-> git tag -a 110614_tag_simpleword
+> git tag -a yymmdd_simplework
 
-@ 15/ Lister le contenu du tag
-> git cat-tag tag 110614_tag_simpleword
+@ 17/ Lister le contenu du tag
+> git cat-file tag yymmdd_simplework
 
-@ 16/ Installer tig et visualiser le dépôt
+@ 18/ Faire un git log --oneline --decorate
+
+@ 19/ (bonus) Installer tig et visualiser le dépôt
 > sudo aptitude install tig
 > tig

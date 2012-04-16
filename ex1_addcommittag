@@ -1,6 +1,11 @@
 @ 1/ Installer git
-@ 2/ Configurer git avec votre "Prénom Nom" et votre mail
-@ 3/ Initialiser un nouveau dépot local (dans un dossier "git-sandbox")
+@ prompt ~ $ mkdir tp-git
+@ prompt ~ $ cd tp-git
+@ prompt ~/tp-git $ git clone git://github.com/clrh/formation-git.git
+@ prompt ~/tp-git $ vim formation-git/ex1_addcommittag
+@ prompt ~ $ vim ~/.gitconfig
+@ 2/ Initialiser un nouveau dépot local (dans un dossier "git-sandbox")
+@ 3/ Configurer git avec votre "Prénom Nom" et votre mail
 @ 4/ Créer un fichier avec 2 lignes de contenu (fichier "file")
 @ contenu du fichier:
 @ first line
@@ -19,9 +24,10 @@
 @ 12/ Ajouter ce fichier à l'index et le commiter avec plus d'une ligne de message de commit
 @ 13/ Lister les commits enregistrés
 @ 14/ Modifier le message du dernier commit
-@ 15/ Poser un tag "110614_tag_simplework"
+@ 16/ Poser un tag "yymmdd_simplework"
 @ contenu du message de tag:
 @ - first file added and commited
 @ - file has changed and benn commited
-@ 15/ Lister le contenu du tag
-@ 16/ Installer tig et visualiser le dépôt
+@ 17/ Lister le contenu du tag
+@ 18/ Faire un git log --oneline --decorate
+@ 19/ (bonus) Installer tig et visualiser le dépôt
