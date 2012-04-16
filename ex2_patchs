@@ -1,6 +1,8 @@
-@1/ Voir le diff du dernier commit puis des 2 derniers
+@1/ Voir le diff du dernier commit
 @2/ Créer un patch du dernier commit puis du premier commit fait au début de cet exercice que vous mettrez dans un dossier "patches"
-@3/ Appliquer ce patch
+@3/ Pour appliquer ce patch sur une autre branche, vous utiliseriez
+@ git am -iu3 0001-Second-simple-commit.patch
 @4/ Signer le patch
-@5/ L'envoyer à une liste (ensemble)
+@5/ Envoyer un patch par mail (facultatif)
+> git send-email --annotate 0001-Second-simple-commit.patch --to=mail@mail.com
 @6/ Appliquer un autre patch en explorant la commande cherry-pick
