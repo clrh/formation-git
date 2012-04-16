@@ -38,7 +38,7 @@ Voir: option -a et -v
 > vim file2 / git add / git commit
 > git cherry-pick <idcommit>
 
-@10/ explorons ensemble la comande git rebase -i
+@10/ explorons ensemble la commande git rebase -i
 Travailler sur les 3 derniers commits
 > git rebase -i HEAD~3
 Option reword

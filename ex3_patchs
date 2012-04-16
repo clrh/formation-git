@@ -1,6 +1,6 @@
 @1/ Voir le diff du dernier commit
 @2/ Créer un patch du dernier commit puis du premier commit fait au début de cet exercice que vous mettrez dans un dossier "patches"
-@3/ Pour appliquer ce patch sur une autre branche, vous utiliseriez
+@3/ Pour appliquer ce patch sur une autre branche, vous utiliserez
 @ git am -iu3 0001-Second-simple-commit.patch
 @4/ Signer le patch
 @5/ Envoyer un patch par mail (facultatif)

@@ -8,7 +8,7 @@ Apprendre à faire des patchs, les envoyers, les signer etc.
 > git format-patch -1
 > git format-patch -1 <idcommit> -o patches
 
-@3/ Pour appliquer ce patch sur une autre branche, vous utiliseriez
+@3/ Pour appliquer ce patch sur une autre branche, vous utiliserez
 @ git am -iu3 0001-Second-simple-commit.patch
 
 @4/ Signer le patch
